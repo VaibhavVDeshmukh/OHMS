@@ -1,0 +1,6 @@
+package com.hospital.services;
+
+public interface ISMSService {
+
+	public  void sendSms(String message,String number);
+}

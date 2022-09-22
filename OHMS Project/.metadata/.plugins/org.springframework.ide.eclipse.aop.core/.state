@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="ohms_server"/>
+<aop-project name="flipkartProductAPIs"/>
+<aop-project name="ohms_server2"/>
+<aop-project name="ohms_server3"/>
+<aop-project name="server_side1"/>
+</aop-reference-model>

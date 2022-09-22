@@ -1,0 +1,8 @@
+package com.hospital.services;
+
+import com.hospital.pojo.Appointment;
+
+public interface ISMSService {
+
+	public  void sendSms(Appointment app,String number);
+}
