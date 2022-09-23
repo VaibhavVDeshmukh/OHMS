@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import { Link, Redirect } from 'react-router-dom';
 import DrAppointments from './DrAppointments';
 import PatientService from '../../Services/PatientService';
+import hlogo from "./../Images/hlogo2.png"
 
 class Appointment extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class Appointment extends Component {
                     <div className="view-table-margin">
                     <nav className="navbar navbar-expand-lg navbar-light header">
                     <div>
-                    <a href="/HomePage"><img className="imgheight" src="http://localhost:3000/images/nLogo.jpg" /></a>
+                    <a href="/HomePage"><img className="imgheight" src={hlogo} /></a>
                     </div>
                     <div className="collapse navbar-collapse ">
                     <ul className="navbar-nav mr-auto">̥

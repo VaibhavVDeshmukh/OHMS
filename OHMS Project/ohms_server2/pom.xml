@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hospital</groupId>
-	<artifactId>ohms_server</artifactId>
+	<artifactId>ohms_server2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ohms_server</name>
 	<description>Server side Programming . Hospital Server </description>

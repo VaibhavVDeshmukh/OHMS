@@ -42,14 +42,7 @@ class DoctorsPanel extends Component {
                 <br />
               </td>
               <td>
-                <div>
-                  <Link
-                    to="/HomePage"
-                    className="btn btn-primary me-md-2 Logout"
-                  >
-                    Log Out
-                  </Link>
-                </div>
+                
               </td>
             </div>
             <div>

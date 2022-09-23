@@ -4,6 +4,9 @@ import Footer from '../Footer';
 import { Link, Redirect } from 'react-router-dom';
 import CreateInvoice from './CreateInvoice';
 import PatientService from '../../Services/PatientService';
+import hlogo from "./../Images/hlogo.png"
+import hlogo1 from "./../Images/hlogo2.png"
+import heartrate from './../Images/health-care-icon.png'
 
 export class ViewInvoice extends Component {
     constructor(props) {
@@ -44,7 +47,7 @@ export class ViewInvoice extends Component {
                     <div className="invoice-body-margin">
                     <nav className="navbar navbar-expand-lg navbar-light header">
                     <div>
-                    <a href="/HomePage"><img className="imgheight" src="http://localhost:3000/images/nLogo.jpg" /></a>
+                    <a href="/HomePage"><img className="imgheight" src={hlogo1} /></a>
                     </div>
                     <div className="collapse navbar-collapse ">
                     <ul className="navbar-nav mr-auto">̥
@@ -75,7 +78,9 @@ export class ViewInvoice extends Component {
                                     <div className="flex-1">
                                         <div>
                                             <div className="card-body invoice-image-1">
-                                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/21-medical-science-lab/pharmacy-prescription.svg" alt="Hospital logo" />
+                                                <div className='invoiceimg1'>
+                                                <img src={hlogo} alt={hlogo} />
+                                                </div>
                                             </div>
                                             <div>
                                                 <div className="Frame">
@@ -85,9 +90,9 @@ export class ViewInvoice extends Component {
                                             </div>
                                         </div>
                                         <div className="invoice-image-2 text-center">
-                                            <div>
-                                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/21-medical-science-lab/heart-rate.svg" alt="Heart image" />
-                                            </div>
+                                        <div className='invoiceimg2'>
+                                                
+                                        </div>
                                         </div>
                                         <div className=" margin-1" >
                                             <div>
@@ -155,7 +160,7 @@ export class ViewInvoice extends Component {
                                             </div>
                                             <div>
                                                 <div><img src="https://image.shutterstock.com/image-vector/grunge-blue-hospital-accreditation-certified-260nw-680114479.jpg" className="invoice-image-2 margin-2" alt="hosptal stamp" /></div>
-                                                <div className="HospName i-hospname-margin "><b >Sanjeevani Group of Hospitals</b><br /></div>
+                                                <div className="HospName i-hospname-margin "><b >Medicare Group of Hospitals</b><br /></div>
                                             </div>
                                         </div><br />
                                     </div>

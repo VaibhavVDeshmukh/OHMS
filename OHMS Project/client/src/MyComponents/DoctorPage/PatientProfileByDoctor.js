@@ -3,6 +3,7 @@ import { Link, Redirect } from "react-router-dom";
 import PatientService from "../../Services/PatientService";
 import Header from "../Header";
 import Footer from '../Footer';
+import hlogo from "./../Images/hlogo2.png"
 
 import Appointment from '../ReceptionistPages/Appointment';
 
@@ -54,7 +55,7 @@ class PatientProfileByDoctor extends Component {
                     <div className="view-table-margin">
                     <nav className="navbar navbar-expand-lg navbar-light header">
                     <div>
-                    <a href="/HomePage"><img className="imgheight" src="http://localhost:3000/images/nLogo.jpg" /></a>
+                    <a href="/HomePage"><img className="imgheight" src={hlogo} /></a>
                     </div>
                     <div className="collapse navbar-collapse ">
                     <ul className="navbar-nav mr-auto">̥

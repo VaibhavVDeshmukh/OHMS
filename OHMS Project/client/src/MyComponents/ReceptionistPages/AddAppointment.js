@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import DoctorService from "../../Services/DoctorService";
 import ReceptionistService from "../../Services/ReceptionistService";
 import { Redirect } from 'react-router-dom';
-
+import hlogo from "./../Images/hlogo2.png"
 
 class addPatientAppointment extends Component {
     constructor(props) {
@@ -93,7 +93,7 @@ class addPatientAppointment extends Component {
                 <div>
                 <nav className="navbar navbar-expand-lg navbar-light header">
                     <div>
-                    <a href="/HomePage"><img className="imgheight" src="http://localhost:3000/images/nLogo.jpg" /></a>
+                    <a href="/HomePage"><img className="imgheight" src={hlogo} /></a>
                     </div>
                     <div className="collapse navbar-collapse ">
                     <ul className="navbar-nav mr-auto">̥

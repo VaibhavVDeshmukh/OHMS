@@ -9,6 +9,9 @@ import ViewAppointment from './ViewAppointment';
 import { Redirect } from "react-router-dom";
 
 import EditProfile from './EditProfile';
+import registration from './../Images/registration-icon.png'
+import doctorcall from './../Images/healthcare-call-center-icon.png'
+import rescompleted from './../Images/booking-confirmed-icon.png'
 
 class PatientHomePage extends Component{
     constructor(props){
@@ -50,7 +53,7 @@ class PatientHomePage extends Component{
                         <td>   
                             <div >
                                 <tr>
-                                    <img height="150px" src="images\doctorcall.jpg" alt="" />
+                                    <img height="150px" src={doctorcall} alt="" />
                                 </tr><br/>
                                 <tr>
                                 <div className="centered"><button onClick={() => this.clickAddAppointment(this.state.pid)} className="btn btn-primary ">Add Appointment</button></div>
@@ -60,7 +63,7 @@ class PatientHomePage extends Component{
                         </td>
                         <td>
                             <tr>
-                                <img height="150px"  src="https://uxwing.com/wp-content/themes/uxwing/download/13-time-date/reservation-completed.svg" alt="" />
+                                <img height="150px"  src={rescompleted} alt="" />
                             </tr><br/>
                             <tr>
                             <div ><button onClick={() => this.ViewAppointment(this.state.pid)} className="btn btn-primary ">View Appointment</button></div>
@@ -68,7 +71,7 @@ class PatientHomePage extends Component{
                         </td>
                         <td>    
                             <tr>
-                                <img clasName="rimg" height="150px" src=" https://uxwing.com/wp-content/themes/uxwing/download/03-editing-user-action/registration.svg" alt="" />
+                                <img clasName="rimg" height="150px" src={registration} alt="" />
                             </tr><br/>
                             <tr>
                             <div><Link to="/EditProfile" className="btn btn-primary pbtn">Edit Profile</Link></div>

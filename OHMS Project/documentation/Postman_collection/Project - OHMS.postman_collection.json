@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "725917a3-c44b-40e0-8a6e-e758a97bbe2a",
+		"_postman_id": "89bb7924-ee8d-44c0-a774-c0cee3b38e03",
 		"name": "Project - OHMS",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23285161"
 	},
 	"item": [
 		{
@@ -11,11 +12,26 @@
 				{
 					"name": "Add patient",
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "730e3da2-0850-4563-b1fd-edc66662477e",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "user",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"role\":\"patient\",\r\n    \"email\":\"preet@gmail.com\",\r\n    \"password\":\"parmar\",\r\n    \"patient\":\r\n    {\r\n         \"pname\":\"preet parmar\",\r\n         \"pgender\":\"male\",\r\n         \"pdob\":\"1990-01-17\",\r\n         \"paddress\":\"nashik\",\r\n         \"pphone\":\"8668968388\"\r\n    }\r\n         \r\n}",
+							"raw": "{\r\n    \"role\":\"patient\",\r\n    \"email\":\"raghav@gmail.com\",\r\n    \"password\":\"raghav\",\r\n    \"patient\":\r\n    {\r\n         \"pname\":\"raghav Singh\",\r\n         \"pgender\":\"male\",\r\n         \"pdob\":\"1999-12-17\",\r\n         \"paddress\":\"Jalgaon\",\r\n         \"pphone\":\"8668968389\"\r\n    }\r\n         \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,18 +39,16 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/patient/register",
+							"raw": "http://localhost:8080/patient/register/",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"patient",
-								"register"
+								"register",
+								""
 							]
 						}
 					},
@@ -43,6 +57,9 @@
 				{
 					"name": "View all patients",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -68,7 +85,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:8080/patient/name/meet parmar",
+							"raw": "http://0.0.0.0:8080/patient/name/Vinayak sonar",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -80,7 +97,7 @@
 							"path": [
 								"patient",
 								"name",
-								"meet parmar"
+								"Vinayak sonar"
 							]
 						}
 					},
@@ -92,7 +109,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:8080/patient/",
+							"raw": "http://0.0.0.0:8080/patient/321",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -103,7 +120,7 @@
 							"port": "8080",
 							"path": [
 								"patient",
-								""
+								"321"
 							]
 						}
 					},
@@ -116,7 +133,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n         \"pname\":\"preet parmar\",\r\n         \"pgender\":\"male\",\r\n         \"pdob\":\"1990-01-17\",\r\n         \"paddress\":\"nashik\",\r\n         \"pphone\":\"8668968388\"\r\n    }",
+							"raw": "    {\r\n         \"pname\":\"Samrat Patil\",\r\n         \"pgender\":\"male\",\r\n         \"pdob\":\"1990-01-12\",\r\n         \"paddress\":\"nashik\",\r\n         \"pphone\":\"8668968388\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -124,7 +141,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/patient/304",
+							"raw": "http://0.0.0.0:8080/patient/320",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -135,7 +152,7 @@
 							"port": "8080",
 							"path": [
 								"patient",
-								"304"
+								"320"
 							]
 						}
 					},
@@ -153,7 +170,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"role\":\"doctor\",\r\n    \"email\":\"nilesh@gmail.com\",\r\n    \"password\":\"nilu\",\r\n    \"doctor\":\r\n    {\r\n        \"deducation\":\"mbbs\",\r\n        \"dspeciality\":\"cardiologist\",\r\n        \"dstatus\":\"available\",\r\n         \"staff\":\r\n         {\r\n            \"sname\":\"nilesh\",\r\n            \"sphone\":\"954298959\",\r\n            \"sgender\":\"male\",\r\n            \"saddress\":\"vardha\",\r\n            \"sdob\":\"1998-08-17\"\r\n         }\r\n    }\r\n}",
+							"raw": "{\r\n    \"role\":\"doctor\",\r\n    \"email\":\"aayushman@gmail.com\",\r\n    \"password\":\"aayushman\",\r\n    \"doctor\":\r\n    {\r\n        \"deducation\":\"bhms\",\r\n        \"dspeciality\":\"cardiologist\",\r\n        \"dstatus\":\"available\",\r\n         \"staff\":\r\n         {\r\n            \"sname\":\"aayushman\",\r\n            \"sphone\":\"954298959\",\r\n            \"sgender\":\"male\",\r\n            \"saddress\":\"wardha\",\r\n            \"sdob\":\"1998-08-17\"\r\n         }\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -204,7 +221,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:8080/doctor/200",
+							"raw": "http://0.0.0.0:8080/doctor/207",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -215,18 +232,20 @@
 							"port": "8080",
 							"path": [
 								"doctor",
-								"200"
+								"207"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "find by name",
+					"name": "find by appointment id",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": null
+						"url": {
+							"raw": ""
+						}
 					},
 					"response": []
 				}
@@ -238,11 +257,14 @@
 				{
 					"name": "add appointment",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"adate\":\"2021-10-24\",\r\n    \"atimeslot\":\"afternoon\",\r\n    \"asymptoms\":\"headache\"\r\n}",
+							"raw": "{\r\n    \"adate\": \"2022-09-24\",\r\n    \"atimeslot\": \"afternoon\",\r\n    \"asymptoms\": \"headache\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -250,7 +272,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/appointment/add/303/208",
+							"raw": "http://0.0.0.0:8080/appointment/add/323/216",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -262,8 +284,8 @@
 							"path": [
 								"appointment",
 								"add",
-								"303",
-								"208"
+								"323",
+								"216"
 							]
 						}
 					},
@@ -316,6 +338,14 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "find All Patient Who Have Appointment",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			]
 		},
@@ -329,7 +359,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "      {\r\n         \"idate\":\"1990-01-17\",\r\n         \"istatus\":\"paid\",\r\n         \"imedicinefees\":\"500\",\r\n         \"idoctorfees\":\"1000\",\r\n         \"ilabtestfees\":\"000\",\r\n         \"iotherfees\":\"100\"\r\n    }",
+							"raw": "      {\r\n         \"idate\":\"2022-24-09\",\r\n         \"istatus\":\"paid\",\r\n         \"imedicinefees\":\"500\",\r\n         \"idoctorfees\":\"1000\",\r\n         \"ilabtestfees\":\"000\",\r\n         \"iotherfees\":\"100\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -337,7 +367,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/invoice/add/405",
+							"raw": "http://0.0.0.0:8080/invoice/add/324",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -349,7 +379,7 @@
 							"path": [
 								"invoice",
 								"add",
-								"405"
+								"324"
 							]
 						}
 					},
@@ -361,7 +391,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://0.0.0.0:8080/invoice/402",
+							"raw": "http://0.0.0.0:8080/invoice/324",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -372,7 +402,7 @@
 							"port": "8080",
 							"path": [
 								"invoice",
-								"402"
+								"324"
 							]
 						}
 					},
@@ -386,6 +416,9 @@
 				{
 					"name": "reset password",
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -398,7 +431,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/user/madhuri@gmail.com/1994-07-13/ubuntu/nurse",
+							"raw": "http://0.0.0.0:8080/user/admin@gmail.com/1998-09-17/admin1/admin1",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -409,10 +442,10 @@
 							"port": "8080",
 							"path": [
 								"user",
-								"madhuri@gmail.com",
-								"1994-07-13",
-								"ubuntu",
-								"nurse"
+								"admin@gmail.com",
+								"1998-09-17",
+								"admin1",
+								"admin1"
 							]
 						}
 					},
@@ -448,6 +481,9 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -460,13 +496,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/user/login",
+							"raw": "http://localhost:8080/user/login",
 							"protocol": "http",
 							"host": [
-								"0",
-								"0",
-								"0",
-								"0"
+								"localhost"
 							],
 							"port": "8080",
 							"path": [
@@ -489,7 +522,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"role\":\"staff\",\r\n    \"email\":\"madhu@gmail.com\",\r\n    \"password\":\"madhu\",\r\n    \"staff\":\r\n    {\r\n         \"sname\":\"madhusudan\",\r\n         \"sphone\":\"9878689201\",\r\n         \"sgender\":\"male\",\r\n         \"saddress\":\"karad\",\r\n         \"sdob\":\"1992-09-25\"\r\n    }     \r\n}",
+							"raw": "{\r\n    \"role\":\"admin\",\r\n    \"email\":\"ram@gmail.com\",\r\n    \"password\":\"ram\",\r\n    \"staff\":\r\n    {\r\n         \"sname\":\"ram\",\r\n         \"sphone\":\"9878689201\",\r\n         \"sgender\":\"male\",\r\n         \"saddress\":\"karad\",\r\n         \"sdob\":\"1992-09-25\"\r\n    }     \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -563,7 +596,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"sid\": 101,\r\n    \"sname\": \"ghanshyam\",\r\n    \"sphone\": \"919898781\",\r\n    \"sgender\": \"male\",\r\n    \"saddress\": \"mumbai\",\r\n    \"sdob\":\"1992-09-02\"\r\n}",
+							"raw": "{\r\n    \"sid\": 101,\r\n    \"sname\": \"shyam\",\r\n    \"sphone\": \"919898781\",\r\n    \"sgender\": \"male\",\r\n    \"saddress\": \"mumbai\",\r\n    \"sdob\":\"1992-09-02\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -603,7 +636,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://0.0.0.0:8080/staff/100",
+							"raw": "http://0.0.0.0:8080/staff/120",
 							"protocol": "http",
 							"host": [
 								"0",
@@ -614,7 +647,7 @@
 							"port": "8080",
 							"path": [
 								"staff",
-								"100"
+								"120"
 							]
 						}
 					},

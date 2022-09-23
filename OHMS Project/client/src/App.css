@@ -635,3 +635,18 @@ position: initial;
   height: 500px;
   width: 100%;
 }
+
+.cwidth{
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  width: 800px;
+}
+.invoiceimg1{
+height:200px;
+width: auto;
+}
+.invoiceimg2{
+  height:200px;
+  width: auto;
+}
